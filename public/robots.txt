@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: *ds/
+
+# Host
+Host: https://gitlab.com/mintapp/next.js-base-project
+
+# Sitemaps
+Sitemap: https://gitlab.com/mintapp/next.js-base-project/sitemap.xml

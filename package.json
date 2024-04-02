@@ -1,0 +1,44 @@
+{
+  "name": "my-test-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:https": "next-dev-https --https --qr --port 4430",
+    "build": "next build && npm run sitemap && npm run dep:gen",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "generate": "node node_modules/@mintapp/api-generator CentralPark",
+    "dep:gen": "license-report --only=prod --output=html > public/licenses.html",
+    "sitemap": "next-sitemap --config next.sitemap.config.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.14",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "license-report": "^6.5.0",
+    "next": "14.1.4",
+    "next-dev-https": "^0.13.3",
+    "next-intl": "^3.10.0",
+    "next-sitemap": "^4.2.3",
+    "prettier": "^3.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "stylis": "^4.3.1",
+    "stylis-plugin-rtl": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/stylis": "^4.2.5",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
