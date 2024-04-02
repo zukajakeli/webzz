@@ -45,12 +45,12 @@ export default async function LocaleLayout({
         className={heebo.className}
         dir={params.locale === "he" ? "rtl" : "ltr"}
       >
-        <Suspense fallback={<>Rendering</>}>
-          <NextIntlClientProvider locale={params.locale} messages={messages}>
+        <Suspense fallback={<>renderiing</>}>
+          {/* <NextIntlClientProvider locale={params.locale} messages={messages}> */}
             <ThemeProviders locale={params.locale}>
               <>{children}</>
             </ThemeProviders>
-          </NextIntlClientProvider>
+          {/* </NextIntlClientProvider> */}
         </Suspense>
       </body>
     </html>
