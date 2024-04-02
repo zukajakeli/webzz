@@ -1,4 +1,5 @@
 "use client"
+
 import styled from "@emotion/styled"
 import { Button } from "@mui/material"
 import { useLocale, useTranslations } from "next-intl"
